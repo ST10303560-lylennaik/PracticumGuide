@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PracticumGuide2"
+rootProject.name = "musicplaylistmanagere"
 include(":app")
  

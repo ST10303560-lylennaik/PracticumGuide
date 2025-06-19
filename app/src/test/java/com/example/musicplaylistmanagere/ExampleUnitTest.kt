@@ -1,4 +1,4 @@
-package com.example.practicumguide2
+package com.example.musicplaylistmanagere
 
 import org.junit.Test
 

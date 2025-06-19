@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.practicumguide2"
+    namespace = "com.example.musicplaylistmanagere"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.practicumguide2"
+        applicationId = "com.example.musicplaylistmanagere"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

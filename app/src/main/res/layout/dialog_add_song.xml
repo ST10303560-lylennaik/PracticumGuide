@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="no"
+        android:hint="@string/song_title_despacito"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/artist_name"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/rating"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_comment"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+</LinearLayout>

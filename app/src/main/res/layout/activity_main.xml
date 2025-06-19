@@ -1,61 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-android:id="@+id/main"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="16dp">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white">
 
-<EditText
-    android:id="@+id/editName"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:hint="Item Name"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"/>
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music_playlist_manager"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
-<EditText
-    android:id="@+id/editQuantity"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:hint="Quantity"
-    android:inputType="number"
-    app:layout_constraintTop_toBottomOf="@id/editName"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="12dp"/>
+    <!-- Add to Playlist Button -->
+    <Button
+        android:id="@+id/btnAddToPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_playlist"
+        android:layout_marginBottom="20dp"
+        tools:ignore="VisualLintButtonSize" />
 
-<Button
-    android:id="@+id/btnAdd"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:text="Add to Packing List"
-    app:layout_constraintTop_toBottomOf="@id/editQuantity"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="24dp"/>
+    <!-- View Playlist Details Button -->
+    <Button
+        android:id="@+id/btnViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_playlist_details"
+        android:layout_marginBottom="20dp"
+        tools:ignore="VisualLintButtonSize" />
 
-<Button
-    android:id="@+id/btnNext"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:text="Go to Screen Two"
-    app:layout_constraintTop_toBottomOf="@id/btnAdd"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="16dp"/>
-
-<Button
-    android:id="@+id/btnExit"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:text="Exit App"
-    app:layout_constraintTop_toBottomOf="@id/btnNext"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="16dp"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_app"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>

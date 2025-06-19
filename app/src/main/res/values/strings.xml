@@ -1,3 +1,16 @@
-<resources>
-    <string name="app_name">PracticumGuide2</string>
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Music Playlist Manager</string>
+    <string name="playlist_details">Playlist Details</string>
+    <string name="calculate_average_rating">Calculate Average Rating</string>
+    <string name="back_to_main_menu">Back to Main Menu</string>
+    <string name="song_title_despacito">Despacito</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="your_comment">Your Comment</string>
+    <string name="music_playlist_manager">Music Playlist Manager</string>
+    <string name="add_to_playlist">Add to Playlist</string>
+    <string name="view_playlist_details">View Playlist Details</string>
+    <string name="exit_app">Exit App</string>
+    <string name="rating">rating</string>
 </resources>
